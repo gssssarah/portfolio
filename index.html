@@ -79,11 +79,50 @@
 </head>
 <body>
 
-<header>
-    <h1>Gulshan Kumar - Teacher Portfolio</h1>
-</header>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Gulshan Kumar</h1>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Hamburger Menu Icon -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-<div class="container">
+    <section id="about" class="profile">
+        <img src="images/gulshan.jpeg" alt="Gulshan Kumar">
+        <div class="profile-info">
+            <h1>Gulshan Kumar</h1>
+            <p>Passionate educator with 10+ years of experience in teaching senior secondary school commputer science.</p>
+            <h2>Teaching Philosophy</h2>
+            <p>I believe in creating a learning environment that fosters curiosity and encourages students to explore their potential.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor of Science in Mathematics -HP University </li>
+            <li>Master of Computer Application - Lovely University</li>
+        </ul>
+        <h2>Experience</h2>
+        <ul>
+		    <li>Worked as software Engineer at Various MNC 2009-2014</li>
+            <li>Lect Computer Science at Secondary School A (2014 - Present)</li>
+          
+        </ul>
+    </section>
+
+<!-- <div class="container">
     <section class="profile">
         <img src="images/gulshan.jpeg" alt="Gulshan Kumar">
         <div class="profile-info">
@@ -127,7 +166,7 @@
         <p>Email: glsunny.kumar@gmail.com</p>
         <p>Phone: (123) 456-7890</p>
     </section>
-</div>
+</div> -->
 
 <footer>
     <p>&copy; 2024 Gulshan Kumar. All rights reserved.</p>
@@ -140,6 +179,16 @@
         <a href="https://www.youtube.com/@TECHNOLOGYECLASS" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
 </footer>
+
+   <!-- Font Awesome for icons -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+   <!-- JavaScript for the menu toggle -->
+   <script>
+       function toggleMenu() {
+           var navLinks = document.getElementById("navLinks");
+           navLinks.classList.toggle("active");
+       }
+   </script>
 
 </body>
 </html>
